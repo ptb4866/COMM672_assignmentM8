@@ -257,9 +257,11 @@ footer img {
     .feature-container {    
         flex-direction: column;
         gap: 20px;
+      
     }
     .feature-block {
         width: 100%;
+    
     }
     .testimonial-container {
         flex-direction: column;
@@ -285,7 +287,6 @@ footer img {
         justify-content: center;
        
     }
-  
     .community .event-block:not(:first-of-type) {
         grid-column: span 3;    
        
@@ -295,8 +296,7 @@ footer img {
         "image"
         "title"
         "text";
-        grid-template-columns: 1fr;
-        
+        grid-template-columns: 1fr;    
     }
     .event-block.featured h3 {
         text-align: center;
@@ -304,6 +304,8 @@ footer img {
     .event-block.featured p {
         text-align: center;
     } 
+
+ 
 
  
  }
@@ -315,11 +317,15 @@ footer img {
     .feature-container.feature-page {    
         display: grid;
         grid-template-columns: repeat(2, 1fr);
+       
     }  
     .feature-page-block:last-of-type {
         grid-column: 1/-1 ;
-        margin: 0px 200px 0px 200px;
+        justify-self: center;
         
+    } 
+    .feature-page-block{
+        max-width: 400px;
     }
     .community {
         grid-template-columns: repeat(2, 1fr);
